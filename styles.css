@@ -15,10 +15,10 @@
   --text-secondary: #9c9cb0;
   --text-muted: #66667a;
 
-  --accent: #39e991;
-  --accent-strong: #6bffbc;
-  --accent-soft: rgba(57, 233, 145, 0.12);
-  --accent-glow: rgba(57, 233, 145, 0.35);
+  --accent: #2a9d8f;
+  --accent-strong: #3fbdac;
+  --accent-soft: rgba(42, 157, 143, 0.14);
+  --accent-glow: rgba(42, 157, 143, 0.4);
 
   --violet: #8b5cf6;
   --violet-soft: rgba(139, 92, 246, 0.16);
@@ -324,19 +324,19 @@ section {
 
 .hero-socials {
   display: flex;
-  gap: 12px;
+  gap: 16px;
 }
 
 .social-btn {
-  width: 40px;
-  height: 40px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--border);
   color: var(--text-secondary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
   transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
@@ -444,6 +444,7 @@ section {
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 48px;
   margin-top: 80px;
   padding-top: 40px;
