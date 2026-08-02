@@ -28,7 +28,15 @@
       <li><a href="#herramientas-ia" data-nav>Herramientas IA</a></li>
     </ul>
     <div class="nav-actions">
-      <a href="assets/Ignacio-Carnevale-CV.pdf" class="btn btn-ghost btn-sm" download>Descargar CV</a>
+      <div class="cv-dropdown">
+        <button class="btn btn-ghost btn-sm cv-toggle" id="cvToggle" type="button" aria-haspopup="true" aria-expanded="false">
+          Descargar CV <span class="caret">▾</span>
+        </button>
+        <div class="cv-menu" id="cvMenu">
+          <a href="assets/Ignacio-Carnevale-CV-ES.pdf" download>🇦🇷 Español</a>
+          <a href="assets/Ignacio-Carnevale-CV-EN.pdf" download>🇺🇸 English</a>
+        </div>
+      </div>
       <a href="#contacto" class="btn btn-primary btn-sm nav-cta">Contactar</a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
@@ -46,7 +54,11 @@
     <a href="#educacion" data-nav>Educación</a>
     <a href="#herramientas-ia" data-nav>Herramientas IA</a>
     <a href="#contacto" data-nav>Contacto</a>
-    <a href="assets/Ignacio-Carnevale-CV.pdf" class="btn btn-primary" download>Descargar CV</a>
+    <div class="drawer-cv-group">
+      <p class="drawer-cv-label">Descargar CV</p>
+      <a href="assets/Ignacio-Carnevale-CV-ES.pdf" class="btn btn-primary" download>🇦🇷 Español</a>
+      <a href="assets/Ignacio-Carnevale-CV-EN.pdf" class="btn btn-ghost" download>🇺🇸 English</a>
+    </div>
   </div>
 </div>
 

@@ -26,6 +26,33 @@ document.querySelectorAll("[data-nav]").forEach((link) => {
 });
 
 // ---------------------------------------------------------------------
+// CV language dropdown
+// ---------------------------------------------------------------------
+const cvToggle = document.getElementById("cvToggle");
+const cvMenu = document.getElementById("cvMenu");
+
+function closeCvMenu() {
+  cvMenu?.classList.remove("open");
+  cvToggle?.setAttribute("aria-expanded", "false");
+}
+
+cvToggle?.addEventListener("click", (e) => {
+  e.stopPropagation();
+  const isOpen = cvMenu.classList.toggle("open");
+  cvToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+document.addEventListener("click", (e) => {
+  if (cvMenu?.classList.contains("open") && !cvMenu.contains(e.target) && e.target !== cvToggle) {
+    closeCvMenu();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeCvMenu();
+});
+
+// ---------------------------------------------------------------------
 // Active nav link on scroll
 // ---------------------------------------------------------------------
 const sections = ["sobre-mi", "experiencia", "resultados", "casos", "educacion", "herramientas-ia", "contacto"]
