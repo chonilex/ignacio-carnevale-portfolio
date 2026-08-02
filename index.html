@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ignacio Carnevale — Content & Growth Marketing B2B</title>
 <meta name="description" content="Content & Growth Marketing B2B especializado en LinkedIn. Founder de WITHDATA. Resultados reales de crecimiento orgánico y campañas de performance." />
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%235fb3a8%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 font-family=%22Arial%22 font-weight=%22800%22 fill=%22%230d1113%22 text-anchor=%22middle%22>IC</text></svg>" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%2339e991%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 font-family=%22monospace%22 font-weight=%22800%22 fill=%22%2308090d%22 text-anchor=%22middle%22>IC</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -14,7 +17,7 @@
   <div class="container">
     <a href="#inicio" class="nav-logo">
       <span class="mark">IC</span>
-      <span class="nav-logo-text">Ignacio Carnevale</span>
+      <span class="nav-logo-text">carnevale<span class="dot-accent">.</span></span>
     </a>
     <ul class="nav-links">
       <li><a href="#sobre-mi" data-nav>Sobre mí</a></li>
@@ -47,9 +50,10 @@
 
 <!-- ============================= HERO ============================= -->
 <section class="hero" id="inicio">
+  <div class="bg-grid" aria-hidden="true"></div>
   <div class="container">
     <div class="hero-copy">
-      <p class="eyebrow">Content & Growth Marketing · B2B</p>
+      <p class="eyebrow">// content &amp; growth marketing · b2b</p>
       <h1 class="hero-title">Hago crecer marcas B2B<br>con contenido que <span class="accent">convierte</span>.</h1>
       <p class="hero-lede">
         Especialista en <strong>content marketing y estrategia de LinkedIn</strong> para empresas B2B,
@@ -60,26 +64,15 @@
         <a href="#resultados" class="btn btn-primary">Ver resultados</a>
         <a href="#casos" class="btn btn-ghost">Casos de éxito</a>
       </div>
-      <div class="hero-mini-stats">
-        <div class="item">
-          <span class="num" data-count="767073">0</span>
-          <span class="lbl">Impresiones LinkedIn</span>
-        </div>
-        <div class="item">
-          <span class="num" data-count="538783">0</span>
-          <span class="lbl">Miembros alcanzados</span>
-        </div>
-        <div class="item">
-          <span class="num"><span data-count="21">0</span>%</span>
-          <span class="lbl">Crecimiento de seguidores</span>
-        </div>
-        <div class="item">
-          <span class="num"><span data-count="2514">0</span>+</span>
-          <span class="lbl">Conversaciones (Meta Ads)</span>
-        </div>
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/ignacio-carnevale" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn">in</a>
+        <a href="mailto:ignaciocarnevale64@gmail.com" aria-label="Email" class="social-btn">✉</a>
+        <a href="tel:+541121587203" aria-label="Teléfono" class="social-btn">☎</a>
       </div>
     </div>
     <div class="hero-portrait">
+      <div class="ring-orbit" aria-hidden="true"></div>
+      <div class="ring-dashed" aria-hidden="true"></div>
       <div class="frame">
         <img src="assets/profile.jpg" alt="Foto de Ignacio Carnevale" />
       </div>
@@ -92,13 +85,32 @@
       </div>
     </div>
   </div>
+
+  <div class="hero-stat-row reveal">
+    <div class="hs-item">
+      <span class="hs-num" data-count="767073">0</span>
+      <span class="hs-lbl">Impresiones<br>LinkedIn</span>
+    </div>
+    <div class="hs-item">
+      <span class="hs-num" data-count="538783">0</span>
+      <span class="hs-lbl">Miembros<br>alcanzados</span>
+    </div>
+    <div class="hs-item">
+      <span class="hs-num"><span data-count="21">0</span>%</span>
+      <span class="hs-lbl">Crecimiento<br>de seguidores</span>
+    </div>
+    <div class="hs-item">
+      <span class="hs-num"><span data-count="2514">0</span>+</span>
+      <span class="hs-lbl">Conversaciones<br>Meta Ads</span>
+    </div>
+  </div>
 </section>
 
 <!-- ============================= STATS STRIP ============================= -->
 <section class="stats-strip" id="resultados">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Resultados</p>
+      <p class="eyebrow">// resultados</p>
       <h2>Los números detrás del trabajo</h2>
       <p>Métricas reales de mi gestión orgánica en LinkedIn (últimos 3 meses) y de campañas de performance en Meta Ads.</p>
     </div>
@@ -147,38 +159,47 @@
   </div>
 </section>
 
-<!-- ============================= ABOUT ============================= -->
-<section class="about">
+<!-- ============================= ABOUT (bento) ============================= -->
+<section class="about" id="sobre-mi">
   <div class="container">
-    <div class="about-photo reveal">
-      <img src="assets/profile.jpg" alt="Ignacio Carnevale" style="width:100%;height:100%;object-fit:cover;" />
+    <div class="section-head reveal">
+      <p class="eyebrow">// sobre mí</p>
+      <h2>Marketing de contenido con mentalidad de datos.</h2>
     </div>
-    <div class="about-text reveal">
-      <p class="eyebrow">Sobre mí</p>
-      <h2 style="font-size:clamp(26px,3vw,36px);margin:0 0 22px;letter-spacing:-0.02em;">Marketing de contenido con mentalidad de datos.</h2>
-      <p>
-        Soy <strong>especialista en content marketing para marcas B2B</strong>, con foco en LinkedIn,
-        ayudando a compañías a generar engagement y comunidad de manera orgánica —
-        sin depender de inversión publicitaria.
-      </p>
-      <p>
-        Además soy <strong>fundador de WITHDATA</strong>, una consultora IT que desarrolla herramientas
-        con automatizaciones e integraciones sobre infraestructura de datos. Estoy en formación
-        continua en <strong>Business Intelligence y data engineering</strong> (SQL, ETL, data warehousing),
-        lo que me permite combinar la estrategia de contenido con una lectura profunda de los datos
-        que la sostienen.
-      </p>
-      <div class="chip-row">
-        <span class="chip">Estrategia de contenido</span>
-        <span class="chip">Gestión de comunidades</span>
-        <span class="chip">Natural Language Querying</span>
-        <span class="chip">Automatización e integración de datos</span>
-        <span class="chip">SQL · ETL · Data Warehousing</span>
-        <span class="chip">JavaScript</span>
-        <span class="chip">Trabajo en equipo</span>
+
+    <div class="bento-grid reveal">
+      <div class="bento-card bento-photo">
+        <img src="assets/profile.jpg" alt="Ignacio Carnevale" />
       </div>
-      <div class="lang-section">
-        <p class="lang-title">Idiomas</p>
+
+      <div class="bento-card bento-intro">
+        <p>
+          Soy <strong>especialista en content marketing para marcas B2B</strong>, con foco en LinkedIn,
+          ayudando a compañías a generar engagement y comunidad de manera orgánica — sin depender
+          de inversión publicitaria.
+        </p>
+        <p>
+          Además soy <strong>fundador de WITHDATA</strong>, una consultora IT que desarrolla herramientas
+          con automatizaciones e integraciones sobre infraestructura de datos. Estoy en formación
+          continua en <strong>Business Intelligence y data engineering</strong> (SQL, ETL, data warehousing).
+        </p>
+      </div>
+
+      <div class="bento-card bento-skills">
+        <p class="bento-label">&gt; stack &amp; skills</p>
+        <div class="chip-row">
+          <span class="chip">Estrategia de contenido</span>
+          <span class="chip">Gestión de comunidades</span>
+          <span class="chip">Natural Language Querying</span>
+          <span class="chip">Automatización e integración de datos</span>
+          <span class="chip">SQL · ETL · Data Warehousing</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Trabajo en equipo</span>
+        </div>
+      </div>
+
+      <div class="bento-card bento-langs">
+        <p class="bento-label">&gt; idiomas</p>
         <div class="lang-grid">
           <div class="lang-card">
             <div class="lang-flag">ES</div>
@@ -210,6 +231,11 @@
           </div>
         </div>
       </div>
+
+      <a href="#contacto" class="bento-card bento-cta">
+        <span class="bento-cta-text">¿Hablamos de tu próxima estrategia de contenido?</span>
+        <span class="bento-cta-btn">Contactar <span class="arrow">→</span></span>
+      </a>
     </div>
   </div>
 </section>
@@ -218,7 +244,7 @@
 <section id="experiencia">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Experiencia</p>
+      <p class="eyebrow">// experiencia</p>
       <h2>Trayectoria profesional</h2>
       <p>Desde la estrategia de contenido en LinkedIn hasta la construcción de herramientas propias sobre datos.</p>
     </div>
@@ -253,10 +279,10 @@
 </section>
 
 <!-- ============================= CASES ============================= -->
-<section id="casos" style="background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+<section id="casos" class="section-alt">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Casos de éxito</p>
+      <p class="eyebrow">// casos de éxito</p>
       <h2>Resultados en contexto</h2>
       <p>Dos formas distintas de generar demanda: crecimiento orgánico de comunidad y campañas de performance.</p>
     </div>
@@ -368,7 +394,7 @@
 <section>
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Proyecto propio</p>
+      <p class="eyebrow">// proyecto propio</p>
       <h2>WITHDATA</h2>
       <p>Consultora IT enfocada en automatización, integración de datos y herramientas de analítica a medida.</p>
     </div>
@@ -402,10 +428,10 @@
 </section>
 
 <!-- ============================= EDUCATION ============================= -->
-<section id="educacion" style="background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+<section id="educacion" class="section-alt">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Educación</p>
+      <p class="eyebrow">// educación</p>
       <h2>Formación continua</h2>
       <p>Combinando marketing, desarrollo y datos para sostener la estrategia con capacidad técnica.</p>
     </div>
@@ -452,7 +478,7 @@
   <div class="container">
     <div class="contact-card reveal">
       <div>
-        <p class="eyebrow">Contacto</p>
+        <p class="eyebrow">// contacto</p>
         <h2>¿Hablamos de tu próxima estrategia de contenido?</h2>
         <p>Ya sea para gestionar la presencia de tu marca en LinkedIn o para construir herramientas de datos a medida, estoy disponible para nuevos proyectos.</p>
       </div>
