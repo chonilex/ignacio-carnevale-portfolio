@@ -20,6 +20,11 @@
   --accent-soft: rgba(42, 157, 143, 0.14);
   --accent-glow: rgba(42, 157, 143, 0.4);
 
+  --card-border: rgba(42, 157, 143, 0.35);
+  --card-border-hover: rgba(42, 157, 143, 0.7);
+  --card-glow: 0 0 26px rgba(42, 157, 143, 0.14);
+  --card-glow-hover: 0 0 36px rgba(42, 157, 143, 0.28);
+
   --violet: #8b5cf6;
   --violet-soft: rgba(139, 92, 246, 0.16);
 
@@ -1097,10 +1102,6 @@ section {
   color: var(--text-muted);
 }
 
-.edu-card.in-progress {
-  border-color: rgba(57, 233, 145, 0.35);
-}
-
 .edu-card .status {
   display: inline-block;
   margin-top: 8px;
@@ -1203,6 +1204,40 @@ footer {
   text-align: center;
   font-size: 12.5px;
   color: var(--text-muted);
+}
+
+/* ------------------------- unified card border + glow ------------------------- */
+
+.bento-card,
+.lang-card,
+.case-card,
+.case-metric,
+.chart-card,
+.project-card,
+.project-visual,
+.edu-card,
+.contact-card,
+.contact-link,
+.stat-grid,
+.hero-portrait .badge {
+  border-color: var(--card-border);
+  box-shadow: var(--card-glow);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.bento-card:hover,
+.lang-card:hover,
+.case-card:hover,
+.case-metric:hover,
+.chart-card:hover,
+.project-card:hover,
+.project-visual:hover,
+.edu-card:hover,
+.contact-card:hover,
+.contact-link:hover,
+.stat-grid:hover {
+  border-color: var(--card-border-hover);
+  box-shadow: var(--card-glow-hover);
 }
 
 /* -------------------------------- reveal -------------------------------- */
