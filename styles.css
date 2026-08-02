@@ -445,30 +445,32 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 48px;
-  margin-top: 80px;
-  padding-top: 40px;
+  gap: 72px;
+  margin-top: 88px;
+  padding: 48px 0 8px;
   border-top: 1px solid var(--border-soft);
 }
 
 .hs-item {
   display: flex;
   align-items: baseline;
-  gap: 12px;
+  gap: 16px;
 }
 
 .hs-num {
-  font-size: 34px;
+  font-size: clamp(38px, 4vw, 52px);
   font-weight: 800;
   color: var(--accent);
   letter-spacing: -0.01em;
   white-space: nowrap;
+  text-shadow: 0 0 28px var(--accent-glow);
 }
 
 .hs-lbl {
-  font-size: 12px;
-  color: var(--text-muted);
-  line-height: 1.4;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  line-height: 1.45;
 }
 
 /* -------------------------------- stat grid -------------------------------- */
@@ -1223,8 +1225,9 @@ footer {
   }
 
   .hero-stat-row {
-    gap: 32px;
-    margin-top: 50px;
+    gap: 40px;
+    margin-top: 56px;
+    padding: 36px 0 4px;
   }
 
   .bento-grid {
@@ -1369,7 +1372,11 @@ footer {
   .hs-item {
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
+  }
+
+  .hs-lbl {
+    font-size: 13.5px;
   }
 
   .section-head {
@@ -1437,7 +1444,7 @@ footer {
   }
 
   .hero-stat-row {
-    gap: 20px;
+    gap: 28px;
   }
 
   .stat-card .label,
