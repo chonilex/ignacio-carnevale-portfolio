@@ -28,7 +28,7 @@ document.querySelectorAll("[data-nav]").forEach((link) => {
 // ---------------------------------------------------------------------
 // Active nav link on scroll
 // ---------------------------------------------------------------------
-const sections = ["sobre-mi", "experiencia", "resultados", "casos", "educacion", "contacto"]
+const sections = ["sobre-mi", "experiencia", "resultados", "casos", "educacion", "herramientas-ia", "contacto"]
   .map((id) => document.getElementById(id))
   .filter(Boolean);
 
