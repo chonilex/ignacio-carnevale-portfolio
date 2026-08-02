@@ -388,7 +388,8 @@ section {
 }
 
 .hero-title .accent {
-  color: var(--accent);
+  color: var(--accent-strong);
+  text-shadow: 0 0 18px var(--accent-glow), 0 0 46px var(--accent-glow);
 }
 
 .hero-lede {
