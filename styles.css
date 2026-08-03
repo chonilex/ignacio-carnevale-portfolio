@@ -141,7 +141,7 @@ section {
   left: 0;
   right: 0;
   z-index: 100;
-  padding: 18px 0;
+  padding: 28px 0;
   background: rgba(10, 10, 18, 0.55);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -152,7 +152,7 @@ section {
 .nav.scrolled {
   border-bottom-color: var(--border);
   background: rgba(10, 10, 18, 0.88);
-  padding: 12px 0;
+  padding: 18px 0;
 }
 
 .nav .container {
@@ -164,11 +164,11 @@ section {
 
 .nav-logo {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 23px;
   letter-spacing: -0.01em;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   flex-shrink: 0;
 }
 
@@ -177,33 +177,34 @@ section {
 }
 
 .nav-logo .mark {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
   background: var(--accent);
   color: #05130c;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 800;
 }
 
 .dot-accent {
   color: var(--accent);
+  font-size: 1.2em;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 40px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav-links a {
-  font-size: 13px;
+  font-size: 15px;
   color: var(--text-secondary);
   font-weight: 500;
   transition: color 0.2s ease;
@@ -223,21 +224,40 @@ section {
 .nav-dropdown-toggle {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
   background: none;
   border: none;
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--text-secondary);
   cursor: pointer;
-  padding: 4px 2px;
+  padding: 6px 2px;
   transition: color 0.2s ease;
   white-space: nowrap;
+  position: relative;
+}
+
+.nav-dropdown-toggle::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  bottom: -4px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.nav-dropdown-toggle.active::after {
+  transform: scaleX(1);
 }
 
 .nav-dropdown-toggle .caret {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--text-muted);
   transition: transform 0.2s ease;
 }
@@ -253,7 +273,7 @@ section {
 
 .nav-dropdown-menu {
   position: absolute;
-  top: calc(100% + 14px);
+  top: calc(100% + 20px);
   left: 50%;
   transform: translate(-50%, -8px);
   background: var(--surface-2);
@@ -295,7 +315,7 @@ section {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
   flex-shrink: 0;
 }
 
@@ -314,10 +334,10 @@ section {
   border: none;
   background: transparent;
   color: var(--text-muted);
-  font-size: 11.5px;
+  font-size: 12.5px;
   font-weight: 700;
   letter-spacing: 0.02em;
-  padding: 6px 12px;
+  padding: 8px 14px;
   border-radius: 999px;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
@@ -454,8 +474,8 @@ section {
 }
 
 .btn-sm {
-  padding: 9px 16px;
-  font-size: 12.5px;
+  padding: 12px 20px;
+  font-size: 13.5px;
 }
 
 .nav-toggle {
@@ -479,7 +499,7 @@ section {
 /* ---------------------------------- hero ---------------------------------- */
 
 .hero {
-  padding: 190px 0 70px;
+  padding: 210px 0 70px;
   position: relative;
   overflow: hidden;
 }
