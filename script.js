@@ -26,30 +26,52 @@ document.querySelectorAll("[data-nav]").forEach((link) => {
 });
 
 // ---------------------------------------------------------------------
-// CV language dropdown
+// Dropdowns (CV language picker + nav section groups)
 // ---------------------------------------------------------------------
-const cvToggle = document.getElementById("cvToggle");
-const cvMenu = document.getElementById("cvMenu");
+const dropdownClosers = [];
 
-function closeCvMenu() {
-  cvMenu?.classList.remove("open");
-  cvToggle?.setAttribute("aria-expanded", "false");
+function setupDropdown(toggle, menu) {
+  if (!toggle || !menu) return;
+
+  function close() {
+    menu.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.classList.remove("open");
+  }
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const willOpen = !menu.classList.contains("open");
+    dropdownClosers.forEach((closeOther) => closeOther());
+    if (willOpen) {
+      menu.classList.add("open");
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.classList.add("open");
+    }
+  });
+
+  dropdownClosers.push(close);
 }
 
-cvToggle?.addEventListener("click", (e) => {
-  e.stopPropagation();
-  const isOpen = cvMenu.classList.toggle("open");
-  cvToggle.setAttribute("aria-expanded", String(isOpen));
+const cvToggle = document.getElementById("cvToggle");
+const cvMenu = document.getElementById("cvMenu");
+setupDropdown(cvToggle, cvMenu);
+
+document.querySelectorAll(".nav-dropdown").forEach((group) => {
+  setupDropdown(group.querySelector(".nav-dropdown-toggle"), group.querySelector(".nav-dropdown-menu"));
 });
 
 document.addEventListener("click", (e) => {
-  if (cvMenu?.classList.contains("open") && !cvMenu.contains(e.target) && e.target !== cvToggle) {
-    closeCvMenu();
-  }
+  const insideDropdown = e.target.closest(".nav-dropdown, .cv-dropdown");
+  if (!insideDropdown) dropdownClosers.forEach((close) => close());
 });
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeCvMenu();
+  if (e.key === "Escape") dropdownClosers.forEach((close) => close());
+});
+
+document.querySelectorAll(".nav-dropdown-menu a[data-nav]").forEach((link) => {
+  link.addEventListener("click", () => dropdownClosers.forEach((close) => close()));
 });
 
 // ---------------------------------------------------------------------
@@ -65,8 +87,11 @@ const sectionObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       navLinks.forEach((l) => l.classList.remove("active"));
+      document.querySelectorAll(".nav-dropdown-toggle").forEach((t) => t.classList.remove("active"));
       const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
       active?.classList.add("active");
+      const parentToggle = active?.closest(".nav-dropdown")?.querySelector(".nav-dropdown-toggle");
+      parentToggle?.classList.add("active");
     }
   });
 }, { rootMargin: "-40% 0px -50% 0px" });

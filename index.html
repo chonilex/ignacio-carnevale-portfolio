@@ -20,12 +20,26 @@
       <span class="nav-logo-text">ignacio carnevale</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#sobre-mi" data-nav data-i18n="nav.about">Sobre mí</a></li>
-      <li><a href="#experiencia" data-nav data-i18n="nav.experience">Experiencia</a></li>
-      <li><a href="#resultados" data-nav data-i18n="nav.results">Resultados</a></li>
-      <li><a href="#casos" data-nav data-i18n="nav.cases">Casos de éxito</a></li>
-      <li><a href="#educacion" data-nav data-i18n="nav.education">Educación</a></li>
-      <li><a href="#herramientas-ia" data-nav data-i18n="nav.aiTools">Herramientas IA</a></li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <span data-i18n="nav.professional">Profesional</span> <span class="caret">▾</span>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="#experiencia" data-nav data-i18n="nav.experience">Experiencia</a>
+          <a href="#resultados" data-nav data-i18n="nav.results">Resultados</a>
+          <a href="#casos" data-nav data-i18n="nav.cases">Casos de éxito</a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          <span data-i18n="nav.personal">Personal</span> <span class="caret">▾</span>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="#sobre-mi" data-nav data-i18n="nav.about">Sobre mí</a>
+          <a href="#educacion" data-nav data-i18n="nav.education">Educación</a>
+          <a href="#herramientas-ia" data-nav data-i18n="nav.aiTools">Herramientas IA</a>
+        </div>
+      </li>
     </ul>
     <div class="nav-actions">
       <div class="lang-switch" id="langSwitch">

@@ -6,6 +6,8 @@ const translations = {
     "meta.title": "Ignacio Carnevale — Content & Growth Marketing B2B",
     "meta.description": "Content & Growth Marketing B2B especializado en LinkedIn. Founder de WITHDATA. Resultados reales de crecimiento orgánico y campañas de performance.",
 
+    "nav.professional": "Profesional",
+    "nav.personal": "Personal",
     "nav.about": "Sobre mí",
     "nav.experience": "Experiencia",
     "nav.results": "Resultados",
@@ -147,6 +149,8 @@ const translations = {
     "meta.title": "Ignacio Carnevale — Content & Growth Marketing B2B",
     "meta.description": "B2B Content & Growth Marketing specialist focused on LinkedIn. Founder of WITHDATA. Real results from organic growth and performance campaigns.",
 
+    "nav.professional": "Professional",
+    "nav.personal": "Personal",
     "nav.about": "About",
     "nav.experience": "Experience",
     "nav.results": "Results",
