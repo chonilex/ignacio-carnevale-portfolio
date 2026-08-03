@@ -583,11 +583,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -36px;
 }
 
 .hero-portrait .frame {
-  width: 300px;
-  height: 300px;
+  width: 360px;
+  height: 360px;
   border-radius: 50%;
   overflow: hidden;
   background: var(--surface);
@@ -612,16 +613,16 @@ section {
 }
 
 .ring-orbit {
-  width: 340px;
-  height: 340px;
+  width: 402px;
+  height: 402px;
   border: 1px solid var(--violet);
   opacity: 0.55;
   z-index: 1;
 }
 
 .ring-dashed {
-  width: 372px;
-  height: 372px;
+  width: 436px;
+  height: 436px;
   border: 2px dashed var(--accent);
   opacity: 0.7;
   z-index: 1;
@@ -1531,6 +1532,7 @@ footer {
 
   .hero-portrait {
     order: -1;
+    margin-top: 0;
     margin-bottom: 20px;
   }
 
