@@ -1352,6 +1352,31 @@ footer {
   color: var(--text-muted);
 }
 
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  transform: translate(-50%, 16px);
+  background: var(--surface-2);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-glow), var(--shadow);
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 999px;
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  white-space: nowrap;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 /* ------------------------- unified card border + glow ------------------------- */
 
 .bento-card,

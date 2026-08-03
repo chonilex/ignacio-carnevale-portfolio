@@ -94,7 +94,7 @@
         </div>
         <div class="hero-socials">
           <a href="https://www.linkedin.com/in/ignacio-carnevale" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn">in</a>
-          <a href="mailto:ignaciocarnevale64@gmail.com" aria-label="Email" class="social-btn">✉</a>
+          <a href="mailto:ignaciocarnevale64@gmail.com" aria-label="Email" class="social-btn js-copy-email" data-email="ignaciocarnevale64@gmail.com">✉</a>
           <a href="tel:+541121587203" aria-label="Teléfono" class="social-btn">☎</a>
         </div>
       </div>
@@ -544,7 +544,7 @@
         <p data-i18n="contact.subtitle">Ya sea para gestionar la presencia de tu marca en LinkedIn o para construir herramientas de datos a medida, estoy disponible para nuevos proyectos.</p>
       </div>
       <div class="contact-links">
-        <a class="contact-link" href="mailto:ignaciocarnevale64@gmail.com">
+        <a class="contact-link js-copy-email" href="mailto:ignaciocarnevale64@gmail.com" data-email="ignaciocarnevale64@gmail.com">
           <span class="ic">✉</span>
           <div><span class="k">Email</span><span class="v">ignaciocarnevale64@gmail.com</span></div>
         </a>
@@ -566,6 +566,8 @@
     <span data-i18n="footer.text">© 2026 Ignacio Carnevale · Content & Growth Marketing B2B · Founder WITHDATA</span>
   </div>
 </footer>
+
+<div class="toast" id="toast"></div>
 
 <script src="i18n.js"></script>
 <script src="script.js"></script>

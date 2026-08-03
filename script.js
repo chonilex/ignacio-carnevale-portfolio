@@ -149,3 +149,35 @@ const barObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.3 });
 
 document.querySelectorAll(".bar-row[data-value]").forEach((row) => barObserver.observe(row));
+
+// ---------------------------------------------------------------------
+// Copy email to clipboard (mailto: silently does nothing on machines
+// with no default mail client configured — common on Windows)
+// ---------------------------------------------------------------------
+const toast = document.getElementById("toast");
+let toastTimer = null;
+
+function showToast(message) {
+  if (!toast) return;
+  toast.textContent = message;
+  toast.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("show"), 2600);
+}
+
+document.querySelectorAll(".js-copy-email").forEach((link) => {
+  link.addEventListener("click", async (e) => {
+    const email = link.getAttribute("data-email");
+    if (!email) return;
+    try {
+      await navigator.clipboard.writeText(email);
+    } catch (err) {
+      return;
+    }
+    const lang = typeof currentLang !== "undefined" ? currentLang : "es";
+    const message = lang === "en"
+      ? `Copied to clipboard: ${email}`
+      : `Copiado al portapapeles: ${email}`;
+    showToast(message);
+  });
+});
