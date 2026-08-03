@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Ignacio Carnevale — Content & Growth Marketing B2B</title>
-<meta name="description" content="Content & Growth Marketing B2B especializado en LinkedIn. Founder de WITHDATA. Resultados reales de crecimiento orgánico y campañas de performance." />
+<title data-i18n="meta.title">Ignacio Carnevale — Content & Growth Marketing B2B</title>
+<meta name="description" data-i18n-attr="content" content="Content & Growth Marketing B2B especializado en LinkedIn. Founder de WITHDATA. Resultados reales de crecimiento orgánico y campañas de performance." />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%2339e991%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 font-family=%22monospace%22 font-weight=%22800%22 fill=%22%2308090d%22 text-anchor=%22middle%22>IC</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,24 +20,28 @@
       <span class="nav-logo-text">ignacio carnevale</span>
     </a>
     <ul class="nav-links">
-      <li><a href="#sobre-mi" data-nav>Sobre mí</a></li>
-      <li><a href="#experiencia" data-nav>Experiencia</a></li>
-      <li><a href="#resultados" data-nav>Resultados</a></li>
-      <li><a href="#casos" data-nav>Casos de éxito</a></li>
-      <li><a href="#educacion" data-nav>Educación</a></li>
-      <li><a href="#herramientas-ia" data-nav>Herramientas IA</a></li>
+      <li><a href="#sobre-mi" data-nav data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="#experiencia" data-nav data-i18n="nav.experience">Experiencia</a></li>
+      <li><a href="#resultados" data-nav data-i18n="nav.results">Resultados</a></li>
+      <li><a href="#casos" data-nav data-i18n="nav.cases">Casos de éxito</a></li>
+      <li><a href="#educacion" data-nav data-i18n="nav.education">Educación</a></li>
+      <li><a href="#herramientas-ia" data-nav data-i18n="nav.aiTools">Herramientas IA</a></li>
     </ul>
     <div class="nav-actions">
+      <div class="lang-switch" id="langSwitch">
+        <button type="button" class="lang-btn" data-lang="es">ES</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
       <div class="cv-dropdown">
         <button class="btn btn-ghost btn-sm cv-toggle" id="cvToggle" type="button" aria-haspopup="true" aria-expanded="false">
-          Descargar CV <span class="caret">▾</span>
+          <span data-i18n="nav.downloadCv">Descargar CV</span> <span class="caret">▾</span>
         </button>
         <div class="cv-menu" id="cvMenu">
           <a href="assets/Ignacio-Carnevale-CV-ES.pdf" download>🇦🇷 Español</a>
           <a href="assets/Ignacio-Carnevale-CV-EN.pdf" download>🇺🇸 English</a>
         </div>
       </div>
-      <a href="#contacto" class="btn btn-primary btn-sm nav-cta">Contactar</a>
+      <a href="#contacto" class="btn btn-primary btn-sm nav-cta" data-i18n="nav.contact">Contactar</a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </button>
@@ -47,15 +51,19 @@
 
 <div class="nav-drawer" id="navDrawer">
   <div class="nav-drawer-panel">
-    <a href="#sobre-mi" data-nav>Sobre mí</a>
-    <a href="#experiencia" data-nav>Experiencia</a>
-    <a href="#resultados" data-nav>Resultados</a>
-    <a href="#casos" data-nav>Casos de éxito</a>
-    <a href="#educacion" data-nav>Educación</a>
-    <a href="#herramientas-ia" data-nav>Herramientas IA</a>
-    <a href="#contacto" data-nav>Contacto</a>
+    <a href="#sobre-mi" data-nav data-i18n="nav.about">Sobre mí</a>
+    <a href="#experiencia" data-nav data-i18n="nav.experience">Experiencia</a>
+    <a href="#resultados" data-nav data-i18n="nav.results">Resultados</a>
+    <a href="#casos" data-nav data-i18n="nav.cases">Casos de éxito</a>
+    <a href="#educacion" data-nav data-i18n="nav.education">Educación</a>
+    <a href="#herramientas-ia" data-nav data-i18n="nav.aiTools">Herramientas IA</a>
+    <a href="#contacto" data-nav data-i18n="nav.contactLink">Contacto</a>
+    <div class="lang-switch lang-switch-drawer" id="langSwitchDrawer">
+      <button type="button" class="lang-btn" data-lang="es">ES</button>
+      <button type="button" class="lang-btn" data-lang="en">EN</button>
+    </div>
     <div class="drawer-cv-group">
-      <p class="drawer-cv-label">Descargar CV</p>
+      <p class="drawer-cv-label" data-i18n="nav.downloadCv">Descargar CV</p>
       <a href="assets/Ignacio-Carnevale-CV-ES.pdf" class="btn btn-primary" download>🇦🇷 Español</a>
       <a href="assets/Ignacio-Carnevale-CV-EN.pdf" class="btn btn-ghost" download>🇺🇸 English</a>
     </div>
@@ -67,22 +75,22 @@
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="container">
     <div class="hero-heading">
-      <p class="eyebrow">// content &amp; growth marketing · b2b</p>
-      <h1 class="hero-title">
+      <p class="eyebrow" data-i18n="hero.eyebrow">// content &amp; growth marketing · b2b</p>
+      <h1 class="hero-title" data-i18n="hero.title">
         <span class="line">Hago crecer marcas B2B</span>
         <span class="line">con contenido que <span class="accent">convierte</span>.</span>
       </h1>
     </div>
     <div class="hero-row">
       <div class="hero-copy">
-        <p class="hero-lede">
+        <p class="hero-lede" data-i18n="hero.lede">
           Especialista en <strong>content marketing y estrategia de LinkedIn</strong> para empresas B2B,
           generando comunidad y engagement de forma 100% orgánica. Fundador de
           <strong>WITHDATA</strong>, consultora de automatización e integración de datos.
         </p>
         <div class="hero-cta">
-          <a href="#resultados" class="btn btn-primary">Ver resultados</a>
-          <a href="#casos" class="btn btn-ghost">Casos de éxito</a>
+          <a href="#resultados" class="btn btn-primary" data-i18n="hero.ctaResults">Ver resultados</a>
+          <a href="#casos" class="btn btn-ghost" data-i18n="hero.ctaCases">Casos de éxito</a>
         </div>
         <div class="hero-socials">
           <a href="https://www.linkedin.com/in/ignacio-carnevale" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn">in</a>
@@ -98,7 +106,7 @@
         </div>
         <div class="badge">
           <span class="dot"></span>
-          <div>
+          <div data-i18n="hero.badge">
             <strong>WITHDATA</strong>
             Founder · 2026–presente
           </div>
@@ -110,19 +118,19 @@
   <div class="hero-stat-row reveal">
     <div class="hs-item">
       <span class="hs-num" data-count="767073">0</span>
-      <span class="hs-lbl">Impresiones<br>LinkedIn</span>
+      <span class="hs-lbl" data-i18n="hero.stat1">Impresiones<br>LinkedIn</span>
     </div>
     <div class="hs-item">
       <span class="hs-num" data-count="538783">0</span>
-      <span class="hs-lbl">Miembros<br>alcanzados</span>
+      <span class="hs-lbl" data-i18n="hero.stat2">Miembros<br>alcanzados</span>
     </div>
     <div class="hs-item">
       <span class="hs-num"><span data-count="21">0</span>%</span>
-      <span class="hs-lbl">Crecimiento<br>de seguidores</span>
+      <span class="hs-lbl" data-i18n="hero.stat3">Crecimiento<br>de seguidores</span>
     </div>
     <div class="hs-item">
       <span class="hs-num"><span data-count="2514">0</span>+</span>
-      <span class="hs-lbl">Conversaciones<br>Meta Ads</span>
+      <span class="hs-lbl" data-i18n="hero.stat4">Conversaciones<br>Meta Ads</span>
     </div>
   </div>
 </section>
@@ -131,50 +139,50 @@
 <section class="stats-strip" id="resultados">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">// resultados</p>
-      <h2>Los números detrás del trabajo</h2>
-      <p>Métricas reales de mi gestión orgánica en LinkedIn (últimos 3 meses) y de campañas de performance en Meta Ads.</p>
+      <p class="eyebrow" data-i18n="results.eyebrow">// resultados</p>
+      <h2 data-i18n="results.title">Los números detrás del trabajo</h2>
+      <p data-i18n="results.subtitle">Métricas reales de mi gestión orgánica en LinkedIn (últimos 3 meses) y de campañas de performance en Meta Ads.</p>
     </div>
     <div class="stat-grid reveal">
       <div class="stat-card">
         <div class="value" data-count="767073">0</div>
-        <div class="label">Impresiones en LinkedIn</div>
-        <div class="delta">▲ +20.784%</div>
+        <div class="label" data-i18n="results.label1">Impresiones en LinkedIn</div>
+        <div class="delta" data-i18n="results.delta1">▲ +20.784%</div>
       </div>
       <div class="stat-card">
         <div class="value" data-count="538783">0</div>
-        <div class="label">Miembros alcanzados</div>
-        <div class="delta">Alcance orgánico</div>
+        <div class="label" data-i18n="results.label2">Miembros alcanzados</div>
+        <div class="delta" data-i18n="results.delta2">Alcance orgánico</div>
       </div>
       <div class="stat-card">
         <div class="value" data-count="6727">0</div>
-        <div class="label">Reacciones al contenido</div>
-        <div class="delta">▲ +3.297%</div>
+        <div class="label" data-i18n="results.label3">Reacciones al contenido</div>
+        <div class="delta" data-i18n="results.delta3">▲ +3.297%</div>
       </div>
       <div class="stat-card">
         <div class="value" data-count="24383">0</div>
-        <div class="label">Clics generados</div>
-        <div class="delta">Tráfico orgánico</div>
+        <div class="label" data-i18n="results.label4">Clics generados</div>
+        <div class="delta" data-i18n="results.delta4">Tráfico orgánico</div>
       </div>
       <div class="stat-card">
         <div class="value"><span data-count="4.1" data-decimals="1">0</span>%</div>
-        <div class="label">Tasa de engagement</div>
-        <div class="delta">Promedio del período</div>
+        <div class="label" data-i18n="results.label5">Tasa de engagement</div>
+        <div class="delta" data-i18n="results.delta5">Promedio del período</div>
       </div>
       <div class="stat-card">
         <div class="value"><span data-count="2514">0</span>+</div>
-        <div class="label">Conversaciones iniciadas</div>
-        <div class="delta">Campañas Meta Ads</div>
+        <div class="label" data-i18n="results.label6">Conversaciones iniciadas</div>
+        <div class="delta" data-i18n="results.delta6">Campañas Meta Ads</div>
       </div>
       <div class="stat-card">
         <div class="value">$<span data-count="0.71" data-decimals="2">0</span></div>
-        <div class="label">Mejor costo por conversación</div>
+        <div class="label" data-i18n="results.label7">Mejor costo por conversación</div>
         <div class="delta">Meta Ads · WhatsApp</div>
       </div>
       <div class="stat-card">
         <div class="value" data-count="36">0</div>
-        <div class="label">Ad sets gestionados</div>
-        <div class="delta">En campañas activas</div>
+        <div class="label" data-i18n="results.label8">Ad sets gestionados</div>
+        <div class="delta" data-i18n="results.delta8">En campañas activas</div>
       </div>
     </div>
   </div>
@@ -184,8 +192,8 @@
 <section class="about" id="sobre-mi">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">// sobre mí</p>
-      <h2>Marketing de contenido con mentalidad de datos.</h2>
+      <p class="eyebrow" data-i18n="about.eyebrow">// sobre mí</p>
+      <h2 data-i18n="about.title">Marketing de contenido con mentalidad de datos.</h2>
     </div>
 
     <div class="bento-grid reveal">
@@ -193,7 +201,7 @@
         <img src="assets/profile.jpg" alt="Ignacio Carnevale" />
       </div>
 
-      <div class="bento-card bento-intro">
+      <div class="bento-card bento-intro" data-i18n="about.intro">
         <p>
           Soy <strong>especialista en content marketing para marcas B2B</strong>, con foco en LinkedIn,
           ayudando a compañías a generar engagement y comunidad de manera orgánica — sin depender
@@ -207,27 +215,27 @@
       </div>
 
       <div class="bento-card bento-skills">
-        <p class="bento-label">&gt; stack &amp; skills</p>
+        <p class="bento-label" data-i18n="about.stackLabel">&gt; stack &amp; skills</p>
         <div class="chip-row">
-          <span class="chip">Estrategia de contenido</span>
-          <span class="chip">Gestión de comunidades</span>
+          <span class="chip" data-i18n="about.skill1">Estrategia de contenido</span>
+          <span class="chip" data-i18n="about.skill2">Gestión de comunidades</span>
           <span class="chip">Natural Language Querying</span>
-          <span class="chip">Automatización e integración de datos</span>
+          <span class="chip" data-i18n="about.skill4">Automatización e integración de datos</span>
           <span class="chip">SQL · ETL · Data Warehousing</span>
           <span class="chip">Claude Code</span>
           <span class="chip">JavaScript</span>
-          <span class="chip">Trabajo en equipo</span>
+          <span class="chip" data-i18n="about.skill8">Trabajo en equipo</span>
         </div>
       </div>
 
       <div class="bento-card bento-langs">
-        <p class="bento-label">&gt; idiomas</p>
+        <p class="bento-label" data-i18n="about.langsLabel">&gt; idiomas</p>
         <div class="lang-grid">
           <div class="lang-card">
             <div class="lang-flag">ES</div>
             <div class="lang-info">
-              <strong>Español</strong>
-              <span>Nativo</span>
+              <strong data-i18n="about.langEs">Español</strong>
+              <span data-i18n="about.levelNative">Nativo</span>
             </div>
             <div class="lang-level" aria-hidden="true">
               <span class="dot filled"></span>
@@ -240,8 +248,8 @@
           <div class="lang-card">
             <div class="lang-flag">EN</div>
             <div class="lang-info">
-              <strong>Inglés</strong>
-              <span>Avanzado</span>
+              <strong data-i18n="about.langEn">Inglés</strong>
+              <span data-i18n="about.levelAdvanced">Avanzado</span>
             </div>
             <div class="lang-level" aria-hidden="true">
               <span class="dot filled"></span>
@@ -255,8 +263,8 @@
       </div>
 
       <a href="#contacto" class="bento-card bento-cta">
-        <span class="bento-cta-text">¿Hablamos de tu próxima estrategia de contenido?</span>
-        <span class="bento-cta-btn">Contactar <span class="arrow">→</span></span>
+        <span class="bento-cta-text" data-i18n="about.ctaText">¿Hablamos de tu próxima estrategia de contenido?</span>
+        <span class="bento-cta-btn"><span data-i18n="nav.contact">Contactar</span> <span class="arrow">→</span></span>
       </a>
     </div>
   </div>
@@ -266,34 +274,34 @@
 <section id="experiencia">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">// experiencia</p>
-      <h2>Trayectoria profesional</h2>
-      <p>Desde la estrategia de contenido en LinkedIn hasta la construcción de herramientas propias sobre datos.</p>
+      <p class="eyebrow" data-i18n="experience.eyebrow">// experiencia</p>
+      <h2 data-i18n="experience.title">Trayectoria profesional</h2>
+      <p data-i18n="experience.subtitle">Desde la estrategia de contenido en LinkedIn hasta la construcción de herramientas propias sobre datos.</p>
     </div>
     <div class="timeline reveal">
       <div class="timeline-item">
         <div class="meta">
-          <span class="period">2023 — Presente</span>
+          <span class="period" data-i18n="experience.period1">2023 — Presente</span>
         </div>
         <h3>Content & LinkedIn Strategy</h3>
-        <p class="org">Freelance · Clientes B2B</p>
+        <p class="org" data-i18n="experience.org1">Freelance · Clientes B2B</p>
         <ul>
-          <li>Gestión de contenido y estrategia de LinkedIn para <strong>Ares & Enderiz</strong> (logística) y <strong>Chutrau S.A.C.I.F.</strong> (industria farmacéutica/química).</li>
-          <li>Generé <strong>~400.000 impresiones en un mes</strong> para Chutrau S.A.C.I.F. (+38% vs. período anterior), con más de <strong>3.500 reacciones</strong> sobre el contenido.</li>
-          <li>Sumé <strong>855 nuevos seguidores en 30 días (+21%)</strong>, llevando la página a 2.440 seguidores en una industria de nicho.</li>
-          <li>Estrategia de contenido orgánico enfocada en industria (medtech, farmacéutica), <strong>sin inversión publicitaria</strong>.</li>
+          <li data-i18n="experience.item1.bullet1">Gestión de contenido y estrategia de LinkedIn para <strong>Ares & Enderiz</strong> (logística) y <strong>Chutrau S.A.C.I.F.</strong> (industria farmacéutica/química).</li>
+          <li data-i18n="experience.item1.bullet2">Generé <strong>~400.000 impresiones en un mes</strong> para Chutrau S.A.C.I.F. (+38% vs. período anterior), con más de <strong>3.500 reacciones</strong> sobre el contenido.</li>
+          <li data-i18n="experience.item1.bullet3">Sumé <strong>855 nuevos seguidores en 30 días (+21%)</strong>, llevando la página a 2.440 seguidores en una industria de nicho.</li>
+          <li data-i18n="experience.item1.bullet4">Estrategia de contenido orgánico enfocada en industria (medtech, farmacéutica), <strong>sin inversión publicitaria</strong>.</li>
         </ul>
       </div>
       <div class="timeline-item">
         <div class="meta">
-          <span class="period">2026 — Presente</span>
+          <span class="period" data-i18n="experience.period2">2026 — Presente</span>
         </div>
-        <h3>Founder</h3>
-        <p class="org">WITHDATA — Consultora IT</p>
+        <h3 data-i18n="experience.title2">Founder</h3>
+        <p class="org" data-i18n="experience.org2">WITHDATA — Consultora IT</p>
         <ul>
-          <li>Consultora que desarrolla <strong>herramientas con automatizaciones e integraciones</strong> sobre infraestructura de datos.</li>
-          <li>Actualmente desarrollando una <strong>herramienta a medida</strong> para un cliente, resolviendo necesidades específicas de su operación.</li>
-          <li>Desarrollé un <strong>modelo predictivo de forecast</strong> y una <strong>plataforma de Natural Language Querying</strong> que traduce datos de negocio en gráficos y tablas para la toma de decisiones.</li>
+          <li data-i18n="experience.item2.bullet1">Consultora que desarrolla <strong>herramientas con automatizaciones e integraciones</strong> sobre infraestructura de datos.</li>
+          <li data-i18n="experience.item2.bullet2">Actualmente desarrollando una <strong>herramienta a medida</strong> para un cliente, resolviendo necesidades específicas de su operación.</li>
+          <li data-i18n="experience.item2.bullet3">Desarrollé un <strong>modelo predictivo de forecast</strong> y una <strong>plataforma de Natural Language Querying</strong> que traduce datos de negocio en gráficos y tablas para la toma de decisiones.</li>
         </ul>
       </div>
     </div>
@@ -304,36 +312,36 @@
 <section id="casos" class="section-alt">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">// casos de éxito</p>
-      <h2>Resultados en contexto</h2>
-      <p>Dos formas distintas de generar demanda: crecimiento orgánico de comunidad y campañas de performance.</p>
+      <p class="eyebrow" data-i18n="cases.eyebrow">// casos de éxito</p>
+      <h2 data-i18n="cases.title">Resultados en contexto</h2>
+      <p data-i18n="cases.subtitle">Dos formas distintas de generar demanda: crecimiento orgánico de comunidad y campañas de performance.</p>
     </div>
 
     <!-- Case 1: Chutrau -->
     <div class="case-card reveal">
       <div class="case-head">
         <div>
-          <p class="tag">Crecimiento orgánico · LinkedIn</p>
-          <h3>Chutrau S.A.C.I.F. — Industria farmacéutica y química</h3>
-          <p>Estrategia de contenido 100% orgánica en LinkedIn, sin inversión publicitaria, enfocada en un público de nicho (medtech y farmacéutica).</p>
+          <p class="tag" data-i18n="cases.case1.tag">Crecimiento orgánico · LinkedIn</p>
+          <h3 data-i18n="cases.case1.title">Chutrau S.A.C.I.F. — Industria farmacéutica y química</h3>
+          <p data-i18n="cases.case1.desc">Estrategia de contenido 100% orgánica en LinkedIn, sin inversión publicitaria, enfocada en un público de nicho (medtech y farmacéutica).</p>
         </div>
       </div>
       <div class="case-metrics">
         <div class="case-metric">
           <div class="value">400K<span>+38%</span></div>
-          <div class="label">Impresiones en un mes</div>
+          <div class="label" data-i18n="cases.case1.metric1">Impresiones en un mes</div>
         </div>
         <div class="case-metric">
-          <div class="value">3.500+</div>
-          <div class="label">Reacciones al contenido</div>
+          <div class="value" data-i18n="cases.case1.value2">3.500+</div>
+          <div class="label" data-i18n="cases.case1.metric2">Reacciones al contenido</div>
         </div>
         <div class="case-metric">
           <div class="value">855<span>+21%</span></div>
-          <div class="label">Nuevos seguidores en 30 días</div>
+          <div class="label" data-i18n="cases.case1.metric3">Nuevos seguidores en 30 días</div>
         </div>
         <div class="case-metric">
-          <div class="value">2.440</div>
-          <div class="label">Seguidores totales alcanzados</div>
+          <div class="value" data-i18n="cases.case1.value4">2.440</div>
+          <div class="label" data-i18n="cases.case1.metric4">Seguidores totales alcanzados</div>
         </div>
       </div>
     </div>
@@ -343,70 +351,70 @@
       <div class="case-head">
         <div>
           <p class="tag">Performance · Meta Ads</p>
-          <h3>Campañas de generación de conversaciones (WhatsApp)</h3>
-          <p>Gestión y optimización de campañas de presentación y evaluación para leads del sector salud (ecografía, embarazo, cirugía y especialidades médicas), iterando sobre 36 ad sets para bajar el costo por conversación.</p>
+          <h3 data-i18n="cases.case2.title">Campañas de generación de conversaciones (WhatsApp)</h3>
+          <p data-i18n="cases.case2.desc">Gestión y optimización de campañas de presentación y evaluación para leads del sector salud (ecografía, embarazo, cirugía y especialidades médicas), iterando sobre 36 ad sets para bajar el costo por conversación.</p>
         </div>
       </div>
       <div class="case-metrics">
         <div class="case-metric">
-          <div class="value">2.514</div>
-          <div class="label">Conversaciones iniciadas</div>
+          <div class="value" data-i18n="cases.case2.value1">2.514</div>
+          <div class="label" data-i18n="cases.case2.metric1">Conversaciones iniciadas</div>
         </div>
         <div class="case-metric">
           <div class="value">36</div>
-          <div class="label">Ad sets gestionados</div>
+          <div class="label" data-i18n="cases.case2.metric2">Ad sets gestionados</div>
         </div>
         <div class="case-metric">
           <div class="value">253K</div>
-          <div class="label">Impresiones (mejor set)</div>
+          <div class="label" data-i18n="cases.case2.metric3">Impresiones (mejor set)</div>
         </div>
         <div class="case-metric">
           <div class="value">$0.71</div>
-          <div class="label">Mejor costo por conversación</div>
+          <div class="label" data-i18n="cases.case2.metric4">Mejor costo por conversación</div>
         </div>
       </div>
 
       <div class="chart-card">
-        <p class="chart-title">Costo por conversación iniciada, por grupo de campaña</p>
-        <p class="chart-sub">Menor costo = mejor rendimiento. Ordenado de mejor a peor resultado.</p>
+        <p class="chart-title" data-i18n="cases.chart.title">Costo por conversación iniciada, por grupo de campaña</p>
+        <p class="chart-sub" data-i18n="cases.chart.subtitle">Menor costo = mejor rendimiento. Ordenado de mejor a peor resultado.</p>
 
         <div class="bar-row best" data-value="0.71">
-          <span class="bar-label">Evaluación · Ecografía & Embarazo</span>
+          <span class="bar-label" data-i18n="cases.chart.bar1">Evaluación · Ecografía & Embarazo</span>
           <div class="bar-track"><div class="bar-fill"></div></div>
           <span class="bar-value">$0.71</span>
         </div>
         <div class="bar-row" data-value="0.93">
-          <span class="bar-label">Presentación · WhatsApp Message Ads</span>
+          <span class="bar-label" data-i18n="cases.chart.bar2">Presentación · WhatsApp Message Ads</span>
           <div class="bar-track"><div class="bar-fill"></div></div>
           <span class="bar-value">$0.93</span>
         </div>
         <div class="bar-row" data-value="1.07">
-          <span class="bar-label">Evaluación · Ecografía & Embarazo (Adv+)</span>
+          <span class="bar-label" data-i18n="cases.chart.bar3">Evaluación · Ecografía & Embarazo (Adv+)</span>
           <div class="bar-track"><div class="bar-fill"></div></div>
           <span class="bar-value">$1.07</span>
         </div>
         <div class="bar-row" data-value="1.24">
-          <span class="bar-label">Evaluación · Cirugía bariátrica (mixta)</span>
+          <span class="bar-label" data-i18n="cases.chart.bar4">Evaluación · Cirugía bariátrica (mixta)</span>
           <div class="bar-track"><div class="bar-fill"></div></div>
           <span class="bar-value">$1.24</span>
         </div>
         <div class="bar-row" data-value="1.33">
-          <span class="bar-label">Presentación · Ecografía & Embarazo</span>
+          <span class="bar-label" data-i18n="cases.chart.bar5">Presentación · Ecografía & Embarazo</span>
           <div class="bar-track"><div class="bar-fill"></div></div>
           <span class="bar-value">$1.33</span>
         </div>
         <div class="bar-row" data-value="1.43">
-          <span class="bar-label">Evaluación · Cirugía vascular & bariátrica</span>
+          <span class="bar-label" data-i18n="cases.chart.bar6">Evaluación · Cirugía vascular & bariátrica</span>
           <div class="bar-track"><div class="bar-fill"></div></div>
           <span class="bar-value">$1.43</span>
         </div>
         <div class="bar-row" data-value="1.68">
-          <span class="bar-label">Presentación · Especialidades médicas</span>
+          <span class="bar-label" data-i18n="cases.chart.bar7">Presentación · Especialidades médicas</span>
           <div class="bar-track"><div class="bar-fill"></div></div>
           <span class="bar-value">$1.68</span>
         </div>
 
-        <p class="case-footnote">Fuente: reportes de Meta Ads Manager, campañas de presentación y evaluación por especialidad.</p>
+        <p class="case-footnote" data-i18n="cases.chart.footnote">Fuente: reportes de Meta Ads Manager, campañas de presentación y evaluación por especialidad.</p>
       </div>
     </div>
   </div>
@@ -416,34 +424,34 @@
 <section>
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">// proyecto propio</p>
+      <p class="eyebrow" data-i18n="project.eyebrow">// proyecto propio</p>
       <h2>WITHDATA</h2>
-      <p>Consultora IT enfocada en automatización, integración de datos y herramientas de analítica a medida.</p>
+      <p data-i18n="project.subtitle">Consultora IT enfocada en automatización, integración de datos y herramientas de analítica a medida.</p>
     </div>
     <div class="project-card reveal">
       <div>
-        <h3>De datos crudos a decisiones, sin fricción</h3>
-        <p>
+        <h3 data-i18n="project.title">De datos crudos a decisiones, sin fricción</h3>
+        <p data-i18n="project.p1">
           Desarrollo herramientas que conectan la infraestructura de datos de una empresa con la toma de
           decisiones diaria: automatizaciones, integraciones y modelos predictivos hechos a medida.
         </p>
-        <p>
+        <p data-i18n="project.p2">
           Un ejemplo es una plataforma de <strong>Natural Language Querying</strong> que traduce preguntas
           de negocio en gráficos y tablas, y un <strong>modelo predictivo de forecast</strong> para anticipar
           tendencias operativas.
         </p>
         <div class="project-tags">
-          <span>Automatización de datos</span>
-          <span>Integraciones</span>
+          <span data-i18n="project.tag1">Automatización de datos</span>
+          <span data-i18n="project.tag2">Integraciones</span>
           <span>NLQ</span>
           <span>Forecasting</span>
         </div>
       </div>
       <div class="project-visual">
-        <div class="row"><span>Fundado</span><strong>2026</strong></div>
-        <div class="row"><span>Modelo predictivo</span><strong>Forecast de negocio</strong></div>
-        <div class="row"><span>Plataforma NLQ</span><strong>Datos → gráficos & tablas</strong></div>
-        <div class="row"><span>Estado actual</span><strong>Desarrollo a medida para cliente</strong></div>
+        <div class="row"><span data-i18n="project.row1">Fundado</span><strong>2026</strong></div>
+        <div class="row"><span data-i18n="project.row2">Modelo predictivo</span><strong data-i18n="project.row2v">Forecast de negocio</strong></div>
+        <div class="row"><span data-i18n="project.row3">Plataforma NLQ</span><strong data-i18n="project.row3v">Datos → gráficos & tablas</strong></div>
+        <div class="row"><span data-i18n="project.row4">Estado actual</span><strong data-i18n="project.row4v">Desarrollo a medida para cliente</strong></div>
       </div>
     </div>
   </div>
@@ -453,9 +461,9 @@
 <section id="educacion" class="section-alt">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">// educación</p>
-      <h2>Formación continua</h2>
-      <p>Combinando marketing, desarrollo y datos para sostener la estrategia con capacidad técnica.</p>
+      <p class="eyebrow" data-i18n="education.eyebrow">// educación</p>
+      <h2 data-i18n="education.title">Formación continua</h2>
+      <p data-i18n="education.subtitle">Combinando marketing, desarrollo y datos para sostener la estrategia con capacidad técnica.</p>
     </div>
     <div class="edu-grid reveal">
       <div class="edu-card in-progress">
@@ -463,14 +471,14 @@
         <div>
           <h4>SQL, ETL & Data Warehousing</h4>
           <p class="school">IBM</p>
-          <p class="period">2025 — Presente</p>
-          <span class="status">En curso</span>
+          <p class="period" data-i18n="education.period1">2025 — Presente</p>
+          <span class="status" data-i18n="education.status1">En curso</span>
         </div>
       </div>
       <div class="edu-card">
         <div class="icon">CM</div>
         <div>
-          <h4>Community Manager y Publicidad</h4>
+          <h4 data-i18n="education.card2.title">Community Manager y Publicidad</h4>
           <p class="school">CoderHouse, Udemy</p>
           <p class="period">2023 — 2024</p>
         </div>
@@ -486,7 +494,7 @@
       <div class="edu-card">
         <div class="icon">WD</div>
         <div>
-          <h4>Web Development</h4>
+          <h4 data-i18n="education.card4.title">Web Development</h4>
           <p class="school">Digital House, Udemy</p>
           <p class="period">2022</p>
         </div>
@@ -499,9 +507,9 @@
 <section id="herramientas-ia">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">// herramientas de ia</p>
-      <h2>IA en mi flujo de trabajo</h2>
-      <p>Incorporo IA generativa a mi trabajo diario, desde investigación y automatización hasta desarrollo con Claude Code.</p>
+      <p class="eyebrow" data-i18n="aitools.eyebrow">// herramientas de ia</p>
+      <h2 data-i18n="aitools.title">IA en mi flujo de trabajo</h2>
+      <p data-i18n="aitools.subtitle">Incorporo IA generativa a mi trabajo diario, desde investigación y automatización hasta desarrollo con Claude Code.</p>
     </div>
     <div class="edu-grid reveal">
       <div class="edu-card">
@@ -509,8 +517,8 @@
         <div>
           <h4>Claude Code 101</h4>
           <p class="school">Anthropic</p>
-          <p class="period">2026 · Certificado de finalización</p>
-          <a class="tool-link" href="assets/certificates/claude-code-101.pdf" target="_blank" rel="noopener">Ver certificado <span class="arrow">→</span></a>
+          <p class="period" data-i18n="aitools.period">2026 · Certificado de finalización</p>
+          <a class="tool-link" href="assets/certificates/claude-code-101.pdf" target="_blank" rel="noopener"><span data-i18n="aitools.viewCert">Ver certificado</span> <span class="arrow">→</span></a>
         </div>
       </div>
       <div class="edu-card">
@@ -518,8 +526,8 @@
         <div>
           <h4>Claude Code in Action</h4>
           <p class="school">Anthropic</p>
-          <p class="period">2026 · Certificado de finalización</p>
-          <a class="tool-link" href="assets/certificates/claude-code-in-action.pdf" target="_blank" rel="noopener">Ver certificado <span class="arrow">→</span></a>
+          <p class="period" data-i18n="aitools.period">2026 · Certificado de finalización</p>
+          <a class="tool-link" href="assets/certificates/claude-code-in-action.pdf" target="_blank" rel="noopener"><span data-i18n="aitools.viewCert">Ver certificado</span> <span class="arrow">→</span></a>
         </div>
       </div>
     </div>
@@ -531,9 +539,9 @@
   <div class="container">
     <div class="contact-card reveal">
       <div>
-        <p class="eyebrow">// contacto</p>
-        <h2>¿Hablamos de tu próxima estrategia de contenido?</h2>
-        <p>Ya sea para gestionar la presencia de tu marca en LinkedIn o para construir herramientas de datos a medida, estoy disponible para nuevos proyectos.</p>
+        <p class="eyebrow" data-i18n="contact.eyebrow">// contacto</p>
+        <h2 data-i18n="about.ctaText">¿Hablamos de tu próxima estrategia de contenido?</h2>
+        <p data-i18n="contact.subtitle">Ya sea para gestionar la presencia de tu marca en LinkedIn o para construir herramientas de datos a medida, estoy disponible para nuevos proyectos.</p>
       </div>
       <div class="contact-links">
         <a class="contact-link" href="mailto:ignaciocarnevale64@gmail.com">
@@ -542,7 +550,7 @@
         </a>
         <a class="contact-link" href="tel:+541121587203">
           <span class="ic">☎</span>
-          <div><span class="k">Teléfono</span><span class="v">+54 11 2158-7203</span></div>
+          <div><span class="k" data-i18n="contact.phone">Teléfono</span><span class="v">+54 11 2158-7203</span></div>
         </a>
         <a class="contact-link" href="https://www.linkedin.com/in/ignacio-carnevale" target="_blank" rel="noopener">
           <span class="ic">in</span>
@@ -555,10 +563,11 @@
 
 <footer>
   <div class="container">
-    © 2026 Ignacio Carnevale · Content & Growth Marketing B2B · Founder WITHDATA
+    <span data-i18n="footer.text">© 2026 Ignacio Carnevale · Content & Growth Marketing B2B · Founder WITHDATA</span>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

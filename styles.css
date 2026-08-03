@@ -169,6 +169,11 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
+}
+
+.nav-logo-text {
+  white-space: nowrap;
 }
 
 .nav-logo .mark {
@@ -191,14 +196,14 @@ section {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .nav-links a {
-  font-size: 12.5px;
+  font-size: 11.5px;
   color: var(--text-secondary);
   font-weight: 500;
   transition: color 0.2s ease;
@@ -214,7 +219,46 @@ section {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.lang-btn {
+  font-family: var(--font-mono);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 6px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-btn:hover {
+  color: var(--text-secondary);
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  color: #05130c;
+}
+
+.lang-switch-drawer {
+  align-self: flex-start;
+  margin-top: 4px;
 }
 
 .cv-dropdown {

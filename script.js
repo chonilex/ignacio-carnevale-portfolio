@@ -96,19 +96,24 @@ function animateCount(el) {
   const duration = 1400;
   const start = performance.now();
 
+  function locale() {
+    return typeof currentLang !== "undefined" && currentLang === "en" ? "en-US" : "es-AR";
+  }
+
   function tick(now) {
     const progress = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - progress, 3);
     const value = target * eased;
     el.textContent = decimals > 0
       ? value.toFixed(decimals)
-      : Math.round(value).toLocaleString("es-AR");
+      : Math.round(value).toLocaleString(locale());
     if (progress < 1) {
       requestAnimationFrame(tick);
     } else {
       el.textContent = decimals > 0
         ? target.toFixed(decimals)
-        : Math.round(target).toLocaleString("es-AR");
+        : Math.round(target).toLocaleString(locale());
+      el.classList.add("counted");
     }
   }
   requestAnimationFrame(tick);
