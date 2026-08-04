@@ -571,6 +571,11 @@ section {
   transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
+.social-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
 .social-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
@@ -1423,6 +1428,11 @@ section {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.contact-link .ic svg {
+  width: 18px;
+  height: 18px;
 }
 
 .contact-link div {
