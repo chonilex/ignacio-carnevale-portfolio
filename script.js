@@ -77,7 +77,7 @@ document.querySelectorAll(".nav-dropdown-menu a[data-nav]").forEach((link) => {
 // ---------------------------------------------------------------------
 // Active nav link on scroll
 // ---------------------------------------------------------------------
-const sections = ["sobre-mi", "experiencia", "resultados", "casos", "educacion", "herramientas-ia", "contacto"]
+const sections = ["sobre-mi", "experiencia", "resultados", "casos", "educacion", "certificaciones", "contacto"]
   .map((id) => document.getElementById(id))
   .filter(Boolean);
 

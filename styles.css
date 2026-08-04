@@ -1306,6 +1306,42 @@ section {
   display: flex;
   gap: 16px;
   align-items: flex-start;
+  position: relative;
+}
+
+#certificaciones .edu-card {
+  padding-top: 42px;
+}
+
+.cert-tag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+
+.cert-tag--ai {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: rgba(42, 157, 143, 0.35);
+}
+
+.cert-tag--dev {
+  color: #b3a2f7;
+  background: var(--violet-soft);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.cert-tag--marketing {
+  color: #f0b95c;
+  background: rgba(240, 185, 92, 0.14);
+  border-color: rgba(240, 185, 92, 0.4);
 }
 
 .edu-card .icon {
