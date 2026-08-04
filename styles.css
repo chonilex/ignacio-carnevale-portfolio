@@ -499,13 +499,13 @@ section {
 /* ---------------------------------- hero ---------------------------------- */
 
 .hero {
-  padding: 210px 0 70px;
+  padding: 168px 0 56px;
   position: relative;
   overflow: hidden;
 }
 
 .hero-heading {
-  margin-bottom: 56px;
+  margin-bottom: 36px;
 }
 
 .hero-row {
@@ -536,8 +536,8 @@ section {
   font-size: 16.5px;
   color: var(--text-secondary);
   max-width: 520px;
-  margin: 0 0 34px;
-  line-height: 1.7;
+  margin: 0 0 24px;
+  line-height: 1.65;
 }
 
 .hero-lede strong {
@@ -549,7 +549,7 @@ section {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
 }
 
 .hero-socials {
@@ -583,7 +583,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -36px;
+  margin-top: -56px;
 }
 
 .hero-portrait .frame {
@@ -678,8 +678,8 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 72px;
-  margin-top: 88px;
-  padding: 48px 0 8px;
+  margin-top: 56px;
+  padding: 32px 0 8px;
   border-top: 1px solid var(--border-soft);
 }
 
