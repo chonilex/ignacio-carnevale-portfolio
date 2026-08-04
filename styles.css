@@ -111,6 +111,18 @@ section {
   font-weight: 800;
 }
 
+.withdata-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.withdata-logo {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
 .section-head p {
   color: var(--text-secondary);
   font-size: 15.5px;
@@ -1714,6 +1726,10 @@ footer {
 
   .section-head p {
     line-height: 1.65;
+  }
+
+  .withdata-heading {
+    justify-content: center;
   }
 
   .bento-intro {
